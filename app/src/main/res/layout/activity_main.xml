@@ -1,0 +1,34 @@
+<!-- activity_main.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView to display the QR code scanning result -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Scan QR Code Result"
+        android:textSize="20sp" />
+
+    <!-- Button to initiate QR code scanning -->
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResult"
+        android:layout_centerHorizontal="true"
+        android:text="Scan QR Code" />
+
+    <!-- ImageView to toggle flashlight -->
+    <ImageView
+        android:id="@+id/btnFlashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnScan"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_flash_off_24" />
+
+</RelativeLayout>
